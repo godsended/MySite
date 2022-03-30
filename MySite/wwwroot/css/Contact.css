@@ -1,0 +1,155 @@
+﻿body {
+    font-family: "Monsterrat", sans-serif;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 900;
+    width: fit-content;
+    height: fit-content;
+    padding: 1%;
+    margin: auto;
+}
+
+p1 {
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+}
+
+input {
+    text-align: end;
+    float: right;
+    background: none;
+    color: white;
+    border: none;
+    font-size: 17px;
+    width: 50%;
+}
+select {
+    float: right;
+    background: none;
+    color: white;
+    border: none;
+    font-size: 17px;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+div {
+    padding: 2%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.soc_ref {
+    margin: 10px;
+}
+
+.welcoming {
+    font-family: "Monsterrat", sans-serif;
+    text-align: center;
+    margin: auto;
+}
+
+.black_div {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: auto;
+    width: 80%;
+}
+
+.white_div {
+    background-color: white;
+    color: black;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+}
+
+.input_div {
+    padding: 5px;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: start;
+}
+
+@media (max-width: 500px) {
+    .black_div {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 1%;
+        padding-right: 1%;
+        margin: auto;
+        width: 98%;
+    }
+
+    .white_div {
+        background-color: white;
+        color: black;
+        padding-left: 1%;
+        padding-right: 1%;
+        text-align: center;
+    }
+
+    .black_half {
+        background-color: black;
+        color: white;
+        text-align: center;
+        width: 100%;
+        padding: 6%;
+        margin: 0;
+        display: block;
+    }
+
+    .white_half {
+        background-color: white;
+        color: black;
+        text-align: center;
+        width: 100%;
+        padding: 6%;
+        margin: 0;
+        display: block;
+    }
+
+    div {
+        padding: 2%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    table {
+        border-spacing: 0;
+        margin: 0;
+        box-sizing: border-box;
+        text-align: center;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        font-weight: 900;
+        margin: auto;
+        padding: 1%;
+        text-align: center;
+    }
+
+    p1, li {
+        font-size: 14px;
+        font-weight: 700;
+        text-align: center;
+        text-decoration: none;
+    }
+}

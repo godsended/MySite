@@ -1,0 +1,47 @@
+﻿@page
+@model MySite.Pages.Contact.ContactPageModel
+@{
+}
+
+<link rel="stylesheet" type="text/css" href="~/css/Contact.css" />
+<link rel="stylesheet" type="text/css" href="~/css/shared.css" />
+
+<div class="white_div" style="padding-top: 0;">
+    <h1>Contact Me</h1>
+    @*<a class="soc_ref" href="https://vk.com/godsended"><img width="50" height="50" src="Images/vk.jpg" /></a>
+        <a class="soc_ref" href="https://t.me/gdsed"><img width="50" height="50" src="Images/tg.png" /></a>*@
+</div>
+
+<div class="black_div">
+    <form id="contact" method="post">
+        <div class="input_div">
+            <p1>Name: </p1>
+            <input name="Name" type="text" placeholder="Your name" />
+        </div>
+        <div class="input_div">
+            <p1>Company: </p1>
+            <input name="Company" type="text" placeholder="Your company" />
+        </div>
+        <div class="input_div">
+            <p1>I am: </p1>
+            <select name="UserType" form="contact">
+                <option>Visitor</option>
+                <option>Recruiter</option>
+                <option>Customer</option>
+            </select>
+        </div>
+        <div class="input_div">
+            <div style="width:100%">
+                <span style="width:100%;max-width:60vw;" role="textbox"
+                      contenteditable="true" rows="1">Type your message</span>
+            </div>
+        </div>
+        <input type="submit" value="Send" />
+        <div class="input_div">
+        </div>
+    </form>
+</div>
+<div class="white_div">
+    <a class="soc_ref" href="https://vk.com/godsended"><img width="50" height="50" src="~/Images/vk.jpg" /></a>
+    <a class="soc_ref" href="https://t.me/gdsed"><img width="50" height="50" src="~/Images/tg.png" /></a>
+</div>

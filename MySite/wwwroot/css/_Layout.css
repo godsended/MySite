@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+    width: 0;
+}
+nav {
+    text-align: center;
+    vertical-align: top;
+}
+div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo {
+    margin:auto;
+    vertical-align: top;
+    padding-left: 10px;
+}
+hr {
+    margin-bottom: 0px;
+    height: 3px;
+    background-color: black;
+}
+.header_div {
+    text-align: start;
+    vertical-align: central;
+    margin: auto;
+    padding: 10px;
+}
+
+.header_button {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    text-align: left;
+    width: 20px;
+    color: black;
+    padding-right: 20px;
+    transition-duration: .2s;
+    user-select: none;
+    text-decoration: none;
+}
+    .header_button:hover {
+        color: darkgray;
+        transition-duration: .2s;
+    }

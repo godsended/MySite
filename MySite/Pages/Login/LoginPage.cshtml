@@ -1,0 +1,78 @@
+@page
+@model MySite.Pages.Login.LoginPageModel
+
+<link rel="stylesheet" type="text/css" href="~/css/Login.css"/>
+<link rel="stylesheet" type="text/css" href="~/css/shared.css"/>
+
+<div class="white_div" style="padding-top: 0;">
+    <h1>Login</h1>
+</div>
+
+<div class="black_div">
+    <form asp-page-handler="TryLogin" id="LoginForm" method="post">
+        <div class="input_div">
+            <p1>Mail: </p1>
+            <input name="LoginMail" type="email" placeholder="Your mail" required="required"/>
+        </div>
+        <div class="input_div">
+            <p1>Password: </p1>
+            <input name="LoginPassword" type="password" placeholder="Your password" required="required"/>
+        </div>
+        <input type="submit" value="Login"/>
+
+    </form>
+</div>
+
+<div class="white_div">
+    <p1>or</p1>
+</div>
+
+<div class="white_div" style="padding-top: 0">
+    <h1>Registration</h1>
+</div>
+
+<div class="black_div">
+    <form asp-page-handler="TryRegister" id="RegistrationForm" method="post">
+        <div class="input_div">
+            <p1>Name: </p1>
+            <input name="Name" type="text" placeholder="Your name" required="required" minlength="2" maxlength="60"/>
+        </div>
+        <div class="input_div">
+            <p1>Company: </p1>
+            <input name="Company" type="text" placeholder="Your company" minlength="2" maxlength="60"/>
+        </div>
+        <div class="input_div">
+            <p1>Mail: </p1>
+            <input name="Mail" type="email" placeholder="Your mail" required="required" maxlength="60"
+                   pattern="^[a-zA-Z0-9._+-]+@("@")[a-zA-Z0-9.-]+\.[a-zA-Z]{2,9}$"/>
+        </div>
+        <div class="input_div">
+            <p1>Password: </p1>
+            <input id="password" name="Password" type="password" placeholder="Your password" required="required" minlength="8"
+                   maxlength="60"/>
+        </div>
+        <div class="input_div">
+            <p1>Repeat password: </p1>
+            <input id="repPassword" name="RepPassword" type="password" placeholder="Repeat your password" required="required"
+                   minlength="8" maxlength="60"/>
+        </div>
+
+        <input type="submit" value="Register"/>
+
+    </form>
+    <script>
+    var password = document.getElementById("password")
+      , confirm_password = document.getElementById("repPassword");
+    
+    function validatePassword(){
+      if(password.value != confirm_password.value) {
+        confirm_password.setCustomValidity("Passwords Don't Match");
+      } else {
+        confirm_password.setCustomValidity('');
+      }
+    }
+    
+    password.onchange = validatePassword;
+    confirm_password.onkeyup = validatePassword;
+    </script>
+</div>

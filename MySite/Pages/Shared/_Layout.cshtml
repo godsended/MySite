@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="~/css/_Layout.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MySite</title>
+</head>
+<body>
+    <header>
+        <a class="logo" asp-page="/Index"><img width="220" src="~/Images/logo.png" /></a>
+        <nav>
+            <div class="header_div">
+                <a class="header_button" asp-page="/Index">Home</a>
+                <a class="header_button" asp-page="/Visitors/VisitorsPage">Visitors</a>
+                <a class="header_button" asp-page="/Contact/ContactPage">Contact Me</a>
+                <a class="header_button" href="https://github.com/godsended?tab=repositories">GitHub</a>
+                <a class="header_button" style="float: right" href="/Login/LoginPage">Login</a>
+            </div>
+        </nav>
+        <hr />
+    </header>
+    <div>
+        <main role="main">
+            @RenderBody()
+        </main>
+    </div>
+</body>
+</html>

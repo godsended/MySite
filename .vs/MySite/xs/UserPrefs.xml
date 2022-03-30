@@ -1,0 +1,41 @@
+﻿<Properties StartupConfiguration="{3819F839-D426-4B7B-9241-147E5C3D7051}|Default">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MySite/Program.cs">
+    <Files>
+      <File FileName="MySite/wwwroot/css/Contact.css" Line="35" Column="21" />
+      <File FileName="MySite/wwwroot/css/_Layout.css" Line="5" Column="30" />
+      <File FileName="MySite/wwwroot/css/Index.css" Line="19" Column="1" />
+      <File FileName="MySite/Pages/Index.cshtml" Line="42" Column="35" />
+      <File FileName="MySite/Program.cs" Line="24" Column="33" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MySite" expanded="True">
+            <Node name="MySite" expanded="True">
+              <Node name="Data" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="Contact" expanded="True" />
+                <Node name="Shared" expanded="True" />
+                <Node name="Visitors" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+              </Node>
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.MySite PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>

@@ -1,0 +1,60 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Welcome!";
+}
+
+<link rel="stylesheet" type="text/css" href="~/css/Index.css"/>
+<link rel="stylesheet" type="text/css" href="~/css/shared.css" />
+<div class="welcoming">
+    <table>
+        <tbody>
+            <tr>
+                <th class="black_half">
+                    <h1>Unity
+                    <br>ASP.NET
+                    <br>Xamarin</h1>
+                </th>
+                <th class="white_half">
+                    <h1>Games
+                    <br>Web apps
+                    <br>Mobile apps</h1>
+                </th>
+            </tr>
+        </tbody>
+    </table>
+    <div class="white_div">
+        <h1 style="margin: auto">About me</h1>
+    </div>
+    <div class="black_div">
+        <h1 style="margin: auto">For customers</h1>
+        <p1>
+            I can:
+        </p1>
+        <ul>
+            <li>Develop simple 2D games</li>
+            <li>Make any app you want</li>
+            <li>Write any program you want (C#)</li>
+        </ul>
+    </div>
+    <div class="white_div">
+        <h1 style="margin: auto">
+            For company recruiters
+        </h1>
+        <p1>
+            Right now I'm looking for a job as a Junior C#/.NET/ASP.NET/Xamarin Developer or Intern
+        </p1>
+    </div>
+    <div class="black_div">
+        <h1 style="margin: auto">General</h1>
+        <p1>
+            Hello. As you could've already guessed, Im a C# developer with considerable experience
+            in creating crossplatform Games and Applications (for Android and IOs). Now
+            Im trying myself in web development. I speak B1-B2 English,
+            am quite sociable and friendly in my own right
+        </p1>
+    </div>
+    <div class="float" href="/Contact">
+        <a asp-page="/Contact/Index"><p1>Contact Me</p1></a>
+    </div>
+</div>  

@@ -1,0 +1,42 @@
+@page
+@using MySite.Models
+@using Microsoft.AspNetCore.Components.Web
+@model MySite.Pages.Visitors.VisitorsPageModel
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text-primary">Visitors List</h2>
+        </div>
+        <div class="col-6 text-end">
+            <a asp-page="/Visitors/Index" asp-page-handler="delete">
+                <button class="btn btn-outline-primary">Clear</button>
+            </a>
+        </div>
+    </div>
+    <table class="table table-bordered table-striped" style="width: 100%">
+        <thead>
+        <tr>
+            <th width="20%">Id</th>
+            <th width="40%">Visitor IP</th>
+            <th width="40%">Time</th>
+        </tr>
+        </thead>
+        <tbody>
+       @if (Model.Visitors != null)
+        {
+            int i = 0;
+           @foreach (var obj in Model.Visitors)
+            {
+                if (i++ == 10)
+                    break;
+                <tr>
+                    <td width="20%">@obj.Id.ToString()</td>
+                    <td width="40%">@obj.Ip</td>
+                    <td width="40%">@obj.VisitTime.ToString()</td>
+                </tr>
+            }
+        }
+        </tbody>
+    </table>
+</div>
+
